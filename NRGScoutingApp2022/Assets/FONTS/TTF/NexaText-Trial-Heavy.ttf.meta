@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 7965524fd50efec4e8cacbad35f4d7a4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Nexa Text-Trial
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e69332c11b47af84f9d11d379165b245, type: 3}
+  - {fileID: 12800000, guid: 953ac2601fed7b14d83f9169425e0da9, type: 3}
+  - {fileID: 12800000, guid: c466ef6a25fc1634f8feecf4b1355d2c, type: 3}
+  - {fileID: 12800000, guid: 66bd0d57f61eb8b4084e262f63d9fc3b, type: 3}
+  - {fileID: 12800000, guid: 413c00098ebed954b861b3c83a14aea9, type: 3}
+  - {fileID: 12800000, guid: 00c679d3851af654d947c7e28d8ad69b, type: 3}
+  - {fileID: 12800000, guid: e2f31b0475018384fa63040f718f1d92, type: 3}
+  - {fileID: 12800000, guid: e5bde9014ffd34c45b8ac2d752223123, type: 3}
+  - {fileID: 12800000, guid: 706636dd028dbeb4d8bde4ac3a9aa7f8, type: 3}
+  - {fileID: 12800000, guid: 03e401a0f24dfa643807a8f2660e09b1, type: 3}
+  - {fileID: 12800000, guid: 657482258be86564ea2b2f31112b655d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
