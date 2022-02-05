@@ -146,6 +146,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6604731187762415917}
     m_Modifications:
+    - target: {fileID: 1794786637, guid: e3ee0be7f835e2041886c7e39ee794f6, type: 3}
+      propertyPath: data.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794786637, guid: e3ee0be7f835e2041886c7e39ee794f6, type: 3}
+      propertyPath: data.Array.data[1].teamName
+      value: Team Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794786637, guid: e3ee0be7f835e2041886c7e39ee794f6, type: 3}
+      propertyPath: data.Array.data[1].matchNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794786637, guid: e3ee0be7f835e2041886c7e39ee794f6, type: 3}
+      propertyPath: data.Array.data[1].teamIdentifier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 111309652366344304, guid: e3ee0be7f835e2041886c7e39ee794f6, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0

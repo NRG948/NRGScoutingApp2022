@@ -64,6 +64,10 @@ public class ColorComponent : MonoBehaviour
                 break;
         }
     }
+
+    private void Update() {
+        UpdateColor();
+    }
 }
 
 [CustomEditor(typeof(ColorComponent))]
