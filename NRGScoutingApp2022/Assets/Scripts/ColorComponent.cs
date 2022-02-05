@@ -32,6 +32,7 @@ public class ColorComponent : MonoBehaviour
     }
 
     private void OnDrawGizmos() {
+        UpdateType();
         switch(type){
             case Type.Image:
                 image.color = color;

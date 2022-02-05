@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.8934904"
-     inkscape:cx="215.48369"
-     inkscape:cy="81.735193"
+     inkscape:zoom="0.7233726"
+     inkscape:cx="259.20252"
+     inkscape:cy="606.18829"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -311,7 +311,14 @@
        x="0.80187935"
        y="1.3632294" />
     <rect
-       style="fill:#e9948a;fill-opacity:1;stroke:#bf4d41;stroke-width:2.0031;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#f2d7d6;fill-opacity:1;stroke:none;stroke-width:0.471148"
+       id="rect18195"
+       width="87.683014"
+       height="25.578587"
+       x="1.7461711"
+       y="30.272297" />
+    <rect
+       style="fill:#eca79f;fill-opacity:1;stroke:#bf4d41;stroke-width:2.0031;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect846"
        width="237.9969"
        height="37.239037"
@@ -551,5 +558,37 @@
          inkscape:path-effect="#path-effect4898"
          mask="url(#mask4430-7)" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:Shagadelic;-inkscape-font-specification:Shagadelic;stroke-width:0.264583"
+       x="4.4942026"
+       y="40.048267"
+       id="text2119"><tspan
+         sodipodi:role="line"
+         id="tspan2117"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';fill:#bf4d41;fill-opacity:1;stroke-width:0.264583"
+         x="4.4942026"
+         y="40.048267">Match 1</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';fill:#bf4d41;fill-opacity:1;stroke-width:0.264583"
+         x="4.4942026"
+         y="50.954288"
+         id="tspan8739">Team Name - Red 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:Shagadelic;-inkscape-font-specification:Shagadelic;stroke-width:0.264583"
+       x="4.4942026"
+       y="66.506622"
+       id="text18533"><tspan
+         sodipodi:role="line"
+         id="tspan18529"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';fill:#bf4d41;fill-opacity:1;stroke-width:0.264583"
+         x="4.4942026"
+         y="66.506622">Match 2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic';fill:#bf4d41;fill-opacity:1;stroke-width:0.264583"
+         x="4.4942026"
+         y="77.412643"
+         id="tspan18531">Team Name - Red 3</tspan></text>
   </g>
 </svg>

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using TMPro;
+using UnityEditor;
 
+[ExecuteInEditMode]
 public class InstantiateEntries : MonoBehaviour
 {
     [Serializable]
@@ -26,6 +28,12 @@ public class InstantiateEntries : MonoBehaviour
     public GameObject entryObject;
     public Transform entryParent;
     List<GameObject> entries;
+
+    [HideInInspector] public Color defaultColor;
+    [HideInInspector] public Color selectedColor;
+    [HideInInspector] public int defaultColorIndex;
+    [HideInInspector] public int selectedColorIndex;
+
     // Start is called before the first frame update
     void Start()
     {       
@@ -35,7 +43,7 @@ public class InstantiateEntries : MonoBehaviour
 
     void InstantiateEntry(string text){
         GameObject entry = Instantiate(entryObject, entryParent);
-        entry.GetComponent<TextMeshProUGUI>().text = text;
+        entry.GetComponentInChildren<TextMeshProUGUI>().text = text;
         entries.Add(entry);
     }
 
@@ -52,5 +60,53 @@ public class InstantiateEntries : MonoBehaviour
                 InstantiateEntry(stringEntry);
             }
         }
+    }
+
+    public void SelectEntry(int entry){
+        for(int i = 0; i < transform.childCount; i++){
+            ColorComponent colorComponent = transform.GetChild(i).GetComponent<ColorComponent>();
+            if(i == entry){
+                colorComponent.color = selectedColor;
+                colorComponent.UpdateColor();
+            }
+            else{
+                colorComponent.color = defaultColor;
+                colorComponent.UpdateColor();
+            }
+        }
+    }
+}
+
+[CustomEditor(typeof(InstantiateEntries))]
+public class EntryEditor : Editor{
+
+    AppManager appManager;
+
+    private void OnEnable() {
+        appManager = FindObjectOfType<AppManager>();
+    }
+
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+        InstantiateEntries instantiateEntries = (InstantiateEntries)target;
+
+        int dafaultPreviousIndex = instantiateEntries.defaultColorIndex;
+        instantiateEntries.defaultColorIndex = 
+            EditorGUILayout.Popup("Color", instantiateEntries.defaultColorIndex, appManager.graphics.colorData.GetColorNames(
+            appManager.graphics.colorData.GetTemplate(appManager.graphics.selectedTemplate)));
+
+        instantiateEntries.defaultColor = 
+            appManager.graphics.colorData.GetTemplate
+            (appManager.graphics.selectedTemplate)[instantiateEntries.defaultColorIndex].color;
+
+        int selectedPreviousIndex = instantiateEntries.selectedColorIndex;
+        instantiateEntries.selectedColorIndex = 
+            EditorGUILayout.Popup("Color", instantiateEntries.selectedColorIndex, appManager.graphics.colorData.GetColorNames(
+            appManager.graphics.colorData.GetTemplate(appManager.graphics.selectedTemplate)));
+
+        instantiateEntries.selectedColor = 
+            appManager.graphics.colorData.GetTemplate
+            (appManager.graphics.selectedTemplate)[instantiateEntries.selectedColorIndex].color;
     }
 }
